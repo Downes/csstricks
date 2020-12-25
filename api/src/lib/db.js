@@ -5,7 +5,7 @@ export const request = async (query = {}) => {
 
   const graphQLClient = new GraphQLClient(endpoint, {
     headers: {
-      authorization: 'Bearer ' + process.env.FAUNADB_SECRET
+      authorization: process.env.FAUNADB_SECRET
     },
   })
 
